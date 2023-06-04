@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de contato</h1>
+    </header>
+    <div class="container">
+        <div id="cadastro">
+            <form>
+                <section>
+                    <label id="linha" for="nome">Nome</label>
+                    <input id="nome" type="text" placeholder="Digite seu nome" disabled>
+                </section>
+                <section>
+                    <label id="linha" for="sobrenome">Sobrenome</label>
+                    <input id="sobrenome" type="text" placeholder="Digite seu sobrenome" disabled>
+                </section>
+                <section>
+                    <label id="linha" for="endereço">Endereço</label>
+                    <input id="endereço" type="text" placeholder="Ex.: Avenida Alameda das Travessas, nº 111" disabled>
+                </section>
+                <section>
+                    <label id="linha" for="telefone">Telefone</label>
+                    <input id="telefone" type="tel" placeholder="(32) 9 - 9999 - 9999" disabled>
+                </section>
+                <section>
+                </section>
+            </form>
+            <div>
+                <a href="index.html" onclick="primeiro()"><button id="menu-baixo">|<</button></a>
+                <a href="index.html" onclick="anterior()"><button id="menu-baixo"><</button></a>
+                <a href="index.html" onclick="próximo()"><button id="menu-baixo">></button></a>
+                <a href="index.html" onclick="último()"><button id="menu-baixo">>|</button></a>
+            </div>
+        </div>
+        <div id="button-container">
+            <a><button onclick="incluir()" style="color:white; background-color: green;"  id="menu-lateral">INCLUIR</button></a>
+            <a><button onclick="editar()" style="color:white; background-color: orange;"  id="menu-lateral">EDITAR</button></a>
+            <a><button onclick="salvar()"style="color:white; background-color: cyan; height: 30px;width: 100px;margin: 38px 700px 20px 5px;border: none;" id="btnSalvar">SALVAR</button></a>
+            <a><button style="color:cyan; background-color: white; height: 30px;width: 100px;margin: 38px 700px 20px 5px;border: none;cursor: pointer;" id="btnCancelar">CANCELAR</button></a>
+            <a><button onclick="excluir()"style="color:white; background-color: red;"  id="menu-lateral">EXCLUIR</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
